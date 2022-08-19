@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Russo+One&family=Unica+One&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+  <script src="bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="bootstrap/jquery-3.6.0.min.js"></script>
+  <script src="bootstrap/sweetalert.min.js"></script>
+  <script src="bootstrap/bootstrap.min.css"></script>
+  <script src=""></script>
+  <title>Document</title>
+</head>
+
+<body>
+
+  <header>
+    <!-- Navbar -->
+    <div class="p-5 text-center bg-dark">
+      <h1 class="mb-3" style="color:white;text-align: center;">SHOPPING ONLINE MARKETPLACE</h1>
+      <a class="btn btn-primary" href="" role="button">Click to Shop</a>
+    </div>
+    <div class="header-top" style="padding-top:20px ; margin-top:0px;">
+      <nav class="navbar navbar-expand-lg" id="background">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Shopping Marketplace</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="About.html">About Us</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Gadgets
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="Mobile.html">Mobile</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="Laptop.html">Laptop</a></li>
+                </ul>
+              </li>
+
+              <!-- -----dropdown products---- -->
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Products
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="Men.html">Men</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="Women.html">Women</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="Kids.html">Kids</a></li>
+                </ul>
+              </li>
+            </ul>
+            <!-- ------end----- -->
+
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search for Product.." aria-label="Search"
+                style="width:450px;">
+              <button class="btn btn-secondary" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+  </header>
+
+
+  <style>
+    h1 {
+      font-family: 'PT Sans Narrow', sans-serif;
+      text-align: left;
+      padding-bottom: 10px;
+    }
+
+    .container {
+      background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+    }
+  </style>
+  <!-- -----CONTENTT------  -->
+
+  <div class="container" id="container" style="padding-top:70px;">
+    <div class="row text-center">
+
+      <!----drum section----- -->
+      <div class="col-sm-3">
+        <img src="images/drum.jpg" style="width:200px;">
+        <Span style="margin:20px;">DRUM SET</Span>
+        <p style="font-weight:bold;">PRICE: $5,000</p>
+        <h1 style="font-size: 20px; background-color: azure;"> </h1>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">add to Cart</button>
+        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#buyModal">Buy</button>
+      </div>
+      <!-- ---PERCUSSION SET------ -->
+      <div class="col-sm-3">
+        <img src="images/instrument.jpg" style="width:200px;">
+        <Span style="margin:20px;"> PERCUSSION SET</Span>
+        <p style="font-weight:bold;">PRICE:$1000</p>
+        <h1 style="font-size: 20px; background-color: azure;"> </h1>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">add to Cart</button>
+        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#buyModal">Buy</button>
+      </div>
+
+      <!---shoes------ -->
+      <div class="col-sm-3">
+        <img src="images/shoes.jpg" style="width:260px;"><br>
+        <Span style="margin:20px;">ALL STAR SHOES</Span>
+        <p style="font-weight:bold;">PRICE: $220</p>
+        <h1 style="font-size: 20px; background-color: azure;"> </h1>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">add to Cart</button>
+        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#buyModal">Buy</button>
+      </div>
+      <!-- -------mic------ -->
+      <div class="col-sm-3">
+        <img src="images/mic.jpg" style="width:115px;"><br>
+        <Span style="margin:20px;">MICROPHONE PREMIUM</Span>
+        <p style="font-weight:bold;">PRICE: $120</p>
+        <h1 style="font-size: 20px; background-color: azure;"> </h1>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">add to Cart</button>
+        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#buyModal">Buy</button>
+      </div>
+
+
+      <!-- ------second row----- -->
+      <div class="col-sm-3">
+        <img src="images/home1.jpg" style="width:150px;padding-top: 40px;"><br>
+        <Span style="margin:20px;">LAPTOP SAMSUNG PREMIUM</Span>
+        <p style="font-weight:bold;">PRICE: $120</p>
+        <h1 style="font-size: 20px; background-color: azure;"> </h1>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">add to Cart</button>
+        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#buyModal">Buy</button>
+      </div>
+
+      <div class="col-sm-3">
+        <img src="images/home2.jpg" style="width:170px;padding-top: 40px;"><br>
+        <Span style="margin:20px;">DELL LAPTOP PREMIUM</Span>
+        <p style="font-weight:bold;">PRICE: $320</p>
+        <h1 style="font-size: 20px; background-color: azure;"> </h1>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">add to Cart</button>
+        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#buyModal">Buy</button>
+      </div>
+
+
+      <div class="col-sm-3">
+        <img src="images/home3.jpg" style="width:160px;padding-top: 40px;"><br>
+        <Span style="margin:20px;">MCBOOK LAPTOP PREMIUM</Span>
+        <p style="font-weight:bold;">PRICE: $220</p>
+        <h1 style="font-size: 20px; background-color: azure;"> </h1>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">add to Cart</button>
+        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#buyModal">Buy</button>
+      </div>
+
+      <div class="col-sm-3">
+        <img src="images/home4.jpg" style="width:115px;padding-top: 40px;"><br>
+        <Span style="margin:20px;">HP PENTIUM LAPTOP PREMIUM</Span>
+        <p style="font-weight:bold;">PRICE: $200</p>
+        <h1 style="font-size: 20px; background-color: azure;"> </h1>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">add to Cart</button>
+        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#buyModal">Buy</button>
+      </div>
+
+      <div class="col-sm-3">
+        <img src="images/t1.jpg" style="width:115px;padding-top: 40px;"><br>
+        <Span style="margin:20px;">PLAIN SHIRT</Span>
+        <p style="font-weight:bold;">PRICE: $200</p>
+        <h1 style="font-size: 20px; background-color: azure;"> </h1>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">add to Cart</button>
+        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#buyModal">Buy</button>
+      </div>
+
+      <div class="col-sm-3">
+        <img src="images/t2.jpg" style="width:115px;padding-top: 40px;"><br>
+        <Span style="margin:20px;">PLAIN SHIRT</Span>
+        <p style="font-weight:bold;">PRICE: $200</p>
+        <h1 style="font-size: 20px; background-color: azure;"> </h1>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">add to Cart</button>
+        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#buyModal">Buy</button>
+      </div>
+
+
+      <div class="col-sm-3">
+        <img src="images/t3.jpg" style="width:115px;padding-top: 40px;"><br>
+        <Span style="margin:20px;">PLAIN SHIRT</Span>
+        <p style="font-weight:bold;">PRICE: $200</p>
+        <h1 style="font-size: 20px; background-color: azure;"> </h1>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">add to Cart</button>
+        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#buyModal">Buy</button>
+      </div>
+
+
+      <div class="col-sm-3">
+        <img src="images/t4.jpg" style="width:115px;padding-top: 40px;"><br>
+        <Span style="margin:20px;">PLAIN SHIRT</Span>
+        <p style="font-weight:bold;">PRICE: $200</p>
+        <h1 style="font-size: 20px; background-color: azure;"> </h1>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">add to Cart</button>
+        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#buyModal">Buy</button>
+      </div>
+
+
+      <div class="col-sm-3">
+        <img src="images/P1.jpg" style="width:120px;padding-top: 40px;"><br>
+        <Span style="margin:20px;">SMOOTH PURFUME</Span>
+        <p style="font-weight:bold;">PRICE: $10</p>
+        <h1 style="font-size: 20px; background-color: azure;"> </h1>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">add to Cart</button>
+        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#buyModal">Buy</button>
+      </div>
+
+      <div class="col-sm-3">
+        <img src="images/P2.jpg" style="width:70px;padding-top: 40px;"><br>
+        <Span style="margin:20px;">SMELL PURFUME</Span>
+        <p style="font-weight:bold;">PRICE: $20</p>
+        <h1 style="font-size: 20px; background-color: azure;"> </h1>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">add to Cart</button>
+        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#buyModal">Buy</button>
+      </div>
+
+
+      <div class="col-sm-3">
+        <img src="images/P3.jpg" style="width:100px;padding-top: 40px;"><br>
+        <Span style="margin:20px;">PURFUME ASCENT</Span>
+        <p style="font-weight:bold;">PRICE: $40</p>
+        <h1 style="font-size: 20px; background-color: azure;"> </h1>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">add to Cart</button>
+        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#buyModal">Buy</button>
+      </div>
+
+      <div class="col-sm-3">
+        <img src="images/P5.jpg" style="width:115px;padding-top: 40px;"><br>
+        <Span style="margin:20px;">PURFUME PREMIUM</Span>
+        <p style="font-weight:bold;">PRICE: $20</p>
+        <h1 style="font-size: 20px; background-color: azure;"> </h1>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">add to Cart</button>
+        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#buyModal">Buy</button>
+      </div>
+
+      <div class="col-sm-3">
+        <img src="images/S1.jpg" style="width:115px;padding-top: 40px;"><br>
+        <Span style="margin:20px;">SHORT FOR WOMEN</Span>
+        <p style="font-weight:bold;">PRICE: $20</p>
+        <h1 style="font-size: 20px; background-color: azure;"> </h1>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">add to Cart</button>
+        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#buyModal">Buy</button>
+      </div>
+
+      <div class="col-sm-3">
+        <img src="images/S2.jpg" style="width:115px;padding-top: 40px;"><br>
+        <Span style="margin:20px;">SHORT FOR WOMEN</Span>
+        <p style="font-weight:bold;">PRICE: $20</p>
+        <h1 style="font-size: 20px; background-color: azure;"> </h1>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">add to Cart</button>
+        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#buyModal">Buy</button>
+      </div>
+
+      <div class="col-sm-3">
+        <img src="images/S3.jpg" style="width:115px;padding-top: 40px;"><br>
+        <Span style="margin:20px;">SHORT FOR WOMEN</Span>
+        <p style="font-weight:bold;">PRICE: $20</p>
+        <h1 style="font-size: 20px; background-color: azure;"> </h1>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">add to Cart</button>
+        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#buyModal">Buy</button>
+      </div>
+
+
+      <div class="col-sm-3">
+        <img src="images/S4.jpg" style="width:115px;padding-top: 40px;"><br>
+        <Span style="margin:20px;">SHORT FOR WOMEN</Span>
+        <p style="font-weight:bold;">PRICE: $20</p>
+        <h1 style="font-size: 20px; background-color: azure;"> </h1>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">add to Cart</button>
+        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#buyModal">Buy</button>
+      </div>
+
+
+      <!-- BUY MODAL -->
+
+      <div class="modal fade" id="buyModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content" style="background-color:rgb(164, 216, 187);">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <H1 style="font-size:20PX; text-align: center;">PROVIDE YOUR INFORMATION</H1>
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label">Address:</label>
+                  <input type="text" class="form-control" id="recipient-name" style="text-align:center ;">
+                </div>
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label">Phone Number:</label>
+                  <input type="text" class="form-control" id="recipient-name" style="text-align: center;">
+                </div>
+                <div class="mb-3">
+                  <label for="message-text" class="col-form-label">Messages:</label>
+                  <textarea class="form-control" id="message-text"></textarea>
+                  <img width="50%" height="50%" style="margin-left:100px;">
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-warning" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">Buy Now</button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ADD TO CART MODAL -->
+      <div class="modal fade" id="exampleModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content" style="background-color:rgb(164, 216, 187);">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img width="50%" height="50%" style="margin-left:100px;">
+              <H1 style="font-size:20PX; text-align: center;">ADD THIS PRODUCTS TO CART?</H1>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"
+                data-bs-dismiss="modal">Add</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+</body>
+
+</html>

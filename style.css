@@ -1,0 +1,17 @@
+*{
+margin: 0%;
+padding: 0%;
+}
+
+.header{
+ text-align: center;
+ padding: 80px;
+
+}
+.header-top{
+ text-align: right;
+ margin-top: 30px;
+ background-color: rgb(172, 216, 255);
+ padding:10px;
+ 
+}
